@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Conta</p>
+            <h2>Pyme <span>®</span></h2>
+        </div>
+        <div class="header-rigth">
+            <div class="nav">
+                <button>Portal Clientes</button>
+                <div class="social">
+                    <a href=""><img src="./icons/facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="./icons/twitter.svg" alt="twitter"></a>
+                    <a href=""><img src="./icons/gmail.svg" alt="gmail"></a>
+                    <a href=""><img src="./icons/youtube.svg" alt="youtube"></a>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="">PROGRAMA CONTABLE</a>
+                </li>
+                <li>
+                    <a href="">DESCARGAR</a>
+                </li>
+                <li>
+                    <a href="">COMPRAR</a>
+                </li>
+                <li>
+                    <a href="">DISTRIBUIDORES</a>
+                </li>
+                <li>
+                    <a href="">CONTÁCTENOS</a>
+                </li>
+                <li>
+                    <a href="">SOPORTE</a>
+                </li>
+                <li>
+                    <a href="">NOTICIAS</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h1>Eventos</h1>
+    <div class="contenido-principal">
+        <div class="card-list">
+            <div class="card card-0">
+                <div class="image-container">
+                    <img src="./icons/graduate.png" alt="birrete">
+                </div>
+                <div class="card-description">
+                    <h2>CURSO VIRTUAL GRATUITO FEBRERO 2021</h2>
+                    <p>Del 11 al 22 de febrero de 2021</p>
+                    <p>11:00 a.m a 1:00 p.m (Hora Colombia)</p>
+                    <p>Manejo básico de ContaPyme NIIF</p>
+                    <a href="www.contapyme.com/envio">www.contapyme.com/envio</a>
+                </div>
+            </div>
+            <div class="card card-1"> 
+                <div class="image-container">
+                    <img src="./icons/camera.png" alt="camera">
+                </div>
+                <div class="card-description">
+                    <h2>COMBO MEMORIAS NII</h2>
+                    <p>Del 11 al 22 de febrero de 2021</p>
+                    <p>Manejo básico de ContaPyme NIIF</p>
+
+                    <a href="www.contapyme.com/envio">www.contapyme.com/envio</a>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="image-container">
+                    <img src="./icons/video.png" alt="video">
+                </div>
+                <div class="card-description">
+                    <h2>MEMORIAS DICIEMBRE 2020</h2>
+                    <p>Manejo básico de ContaPyme NIIF</p>
+                    <a href="www.contapyme.com/envio">www.contapyme.com/envio</a>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="image-container">
+                    <img src="./icons/video.png" alt="video">
+                </div>
+                <div class="card-description">
+                    <h2>CURSO VIRTUAL GRATUITO FEBRERO 2021</h2>
+                    <p>Del 11 al 22 de febrero de 2021</p>
+                    <p>11:00 a.m a 1:00 p.m (Hora Colombia)</p>
+                    <p>Manejo básico de ContaPyme NIIF</p>
+                    <a href="www.contapyme.com/envio">www.contapyme.com/envio</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <form onsubmit="getData(event)" id="form">
+                <h2>Regístrese</h2>
+                <input type="text" name="name" id="name" placeholder="Nombre*">
+                <input type="text" name="lastname" id="lastname" placeholder="Apellidos*">
+                <input type="email" name="email" id="email" placeholder="Email*">
+                <input type="tel" name="cel" id="cel" placeholder="Celular*">
+                <select name="country" id="country">
+                    <option value="COLOMBIA">COLOMBIA</option>
+                    <option value="MEXICO">MÉXICO</option>
+                </select>
+                <select name="state" id="state">
+                    <option value="ANTIOQUIA">ANTIOQUIA</option>
+                    <option value="CUNDINAMARCA">CUNDINAMARCA</option>
+                </select>
+                <select name="city" id="city">
+                    <option value="MEDELLIN">MEDELLÍN</option>
+                    <option value="ENVIGADO">ENVIGADO</option>
+                </select> 
+                <textarea name="notes" id="notes" cols="30" rows="6" placeholder="Notas*"></textarea>
+                <div>
+                    <input type="checkbox">
+                    <label>
+                        He leído y aceptado 
+                        <a href="">políticas de tratamiento de la información</a>
+                    </label>
+                </div>
+                <button class="button-submit" onclick="getData(event)">Enviar</button>
+            </form>
+            <button class="button-form" onclick="toggleForm()">
+                Mostrar formulario
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
